@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+   /* Header Styling */
+header {
+  background: linear-gradient(to right, #007bff, #4caf50); /* Professional gradient */
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Header Container */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #f4f4f4;
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Auth Buttons */
+.auth .login-btn, .auth .signup-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth .login-btn:hover, .auth .signup-btn:hover {
+  background-color: white;
+  color: #4caf50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .auth {
+    margin-top: 10px;
+  }
+}
+.nav-links li a.active {
+  background-color: #ffffff55; /* Highlight current page */
+  font-weight: bold;
+}
+/* Info Section Styling */
+.info-section {
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Image Styling */
+.info-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styling */
+.info-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.info-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.info-text p + p {
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-image img {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="logo">
+        <h1><span>Mock</span>Test Pro</h1>
+      </div>
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="test.html">Take a Test</a></li>
+          <li><a href="results.html">Results</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- Login -->
+      <div class="auth">
+        <a href="login.html" class="login-btn">Login</a>
+      </div>
+    </div>
+  </header>
+  
+  <section class="info-section">
+    <div class="info-container">
+      <!-- Image Section -->
+      <div class="info-image">
+        <img src="online-mock-test.jpg" alt="Online Mock Test" />
+      </div>
+      <!-- Text Section -->
+      <div class="info-text">
+        <h2>Why Choose Our Online Mock Test System?</h2>
+        <p>
+          Our online mock test system is designed to help you prepare for competitive exams like
+          government jobs, banking, SSC, reasoning, and aptitude tests. With a focus on 
+          providing realistic exam simulations, you can test your knowledge, improve speed,
+          and gain confidence for the actual exam.
+        </p>
+        <p>
+          Whether you're preparing for state-level exams, central government positions, or 
+          private sector aptitude tests, our platform offers a comprehensive solution tailored 
+          to your needs.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  
+ 
+  
+</body>
+</html>
